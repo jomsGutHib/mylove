@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .no-btn {
+    position: absolute;
+    transition: 0.3s ease;
+  }
+  
+  .buttons:hover .no-btn {
+    top: -50px;
+    left: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #popup {
+    display: none;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #c1f0c1;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ #popup {
+    display: block;
+  }
+  
+  label.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .no-btn {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
